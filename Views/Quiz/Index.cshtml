@@ -1,0 +1,31 @@
+@model IEnumerable<Quiz>
+
+<h2>All Quizzes</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New Quiz</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Quiz ID</th>
+            <th>Title</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (Quiz quiz in Model)
+    {
+        <tr>
+            <td>@quiz.QuizId</td>
+            <td>@quiz.Title</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@quiz.QuizId">Details</a> |
+                <a asp-action="Edit" asp-route-id="@quiz.QuizId">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@quiz.QuizId">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
