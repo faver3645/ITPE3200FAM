@@ -3194,6 +3194,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Microsoft.EntityFrameworkCore >= 9.0.9",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.*",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.9"
     ]
@@ -3240,6 +3241,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[9.0.9, )"
+          },
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
             "version": "[8.*, )"
