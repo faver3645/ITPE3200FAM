@@ -1,11 +1,50 @@
 {
   "Version": 1,
-  "Hash": "AJaXIKZ0Ua1rKMiklUg2Flh8vrr1NrtCoQSwuWhqnuE=",
+  "Hash": "4naMe0T5iKcYYG2+QYLoBKjgU0m2GnjOTI0JSo9j/0E=",
   "Source": "ITPE3200FAM",
   "BasePath": "_content/ITPE3200FAM",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ITPE3200FAM.styles.css",
+      "SourceId": "ITPE3200FAM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/ITPE3200FAM",
+      "RelativePath": "ITPE3200FAM.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ITPE3200FAM.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ITPE3200FAM.bundle.scp.css",
+      "SourceId": "ITPE3200FAM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/ITPE3200FAM",
+      "RelativePath": "ITPE3200FAM.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ITPE3200FAM.bundle.scp.css"
+    }
+  ]
 }
