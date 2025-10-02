@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ITPE3200FAM.Models;
 using ITPE3200FAM.DAL;
+using Microsoft.EntityFrameworkCore;
 namespace ITPE3200FAM.Controllers
 {
     public class TakeQuizController : Controller
