@@ -1,17 +1,18 @@
-using Microsoft.EntityFrameworkCore;
-using MyShop.Models;
- 
-namespace MyShop.Controllers
+using Microsoft.AspNetCore.Mvc;
+using ITPE3200FAM.Models;
+using ITPE3200FAM.DAL;
+
+namespace MyTest.Controllers
 {
     public class TakeQuizController : Controller
     {
-        private readonly ItemDbContext _context;
- 
-        public TakeQuizController(ItemDbContext context)
+        private readonly QuizDbContext _context;
+
+        public TakeQuizController(QuizDbContext context)
         {
             _context = context;
         }
- 
+
         // GET: /TakeQuiz/Take/5
         [HttpGet]
         public async Task<IActionResult> Take(int id)
@@ -20,12 +21,12 @@ namespace MyShop.Controllers
                 .Include(q => q.Questions)
                 .ThenInclude(q => q.AnswerOptions)
                 .FirstOrDefaultAsync(q => q.QuizId == id);
- 
+
             if (quiz == null) return NotFound();
- 
+
             return View(quiz);
         }
- 
+
         // POST: /TakeQuiz/Submit
         [HttpPost]
         public async Task<IActionResult> Submit(int quizId, string userName, Dictionary<int, int> answers)
@@ -34,9 +35,9 @@ namespace MyShop.Controllers
                 .Include(q => q.Questions)
                 .ThenInclude(q => q.AnswerOptions)
                 .FirstOrDefaultAsync(q => q.QuizId == quizId);
- 
+
             if (quiz == null) return NotFound();
- 
+
             int score = 0;
             foreach (var q in quiz.Questions)
             {
@@ -49,20 +50,20 @@ namespace MyShop.Controllers
                     }
                 }
             }
- 
-            var result = new UserQuizResult
+
+            var result = new QuizResult
             {
                 UserName = userName,
                 Quiz = quiz,
                 Score = score
             };
- 
+
             return View("Result", result);
         }
- 
+
         // GET: /TakeQuiz/Result (kun for redirecting)
         [HttpGet]
-        public IActionResult Result(UserQuizResult result)
+        public IActionResult Result(QuizResult result)
         {
             return View(result);
         }
