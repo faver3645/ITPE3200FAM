@@ -1,0 +1,30 @@
+@model Quiz
+ 
+<h2>Take Quiz: @Model.Title</h2>
+ 
+<form asp-action="Submit" method="post">
+    <input type="hidden" name="quizId" value="@Model.QuizId" />
+ 
+    <div class="form-group">
+        <label>Your name:</label>
+        <input type="text" name="userName" class="form-control" required />
+    </div>
+ 
+    @foreach (Question q in Model.Questions)
+    {
+        <div class="mb-3">
+            <h5>@q.Text</h5>
+            @foreach (AnswerOption opt in q.AnswerOptions)
+            {
+                <div class="form-check">
+                    <input type="radio" class="form-check-input"
+                           name="answers[@q.QuestionId]" value="@opt.AnswerOptionId" />
+                    <label class="form-check-label">@opt.Text</label>
+                </div>
+            }
+        </div>
+    }
+ 
+    <button type="submit" class="btn btn-success">Submit</button>
+    <a asp-action="Index" asp-controller="Quiz" class="btn btn-secondary">Cancel</a>
+</form>
