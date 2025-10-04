@@ -1,12 +1,20 @@
 {
   "Version": 1,
-  "Hash": "4naMe0T5iKcYYG2+QYLoBKjgU0m2GnjOTI0JSo9j/0E=",
+  "Hash": "riQV7erpT2ujAaD9MBRK5olAHOxYhV46hLPf534EgpQ=",
   "Source": "ITPE3200FAM",
   "BasePath": "_content/ITPE3200FAM",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ITPE3200FAM\\wwwroot",
+      "Source": "ITPE3200FAM",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\wwwroot\\",
+      "BasePath": "_content/ITPE3200FAM",
+      "Pattern": "**"
+    }
+  ],
   "Assets": [
     {
       "Identity": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ITPE3200FAM.styles.css",
@@ -45,6 +53,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ITPE3200FAM.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\wwwroot\\js\\bootstrap.js",
+      "SourceId": "ITPE3200FAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\wwwroot\\",
+      "BasePath": "_content/ITPE3200FAM",
+      "RelativePath": "js/bootstrap.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.js"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\wwwroot\\js\\jquery.min.js",
+      "SourceId": "ITPE3200FAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\wwwroot\\",
+      "BasePath": "_content/ITPE3200FAM",
+      "RelativePath": "js/jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
     }
   ]
 }
