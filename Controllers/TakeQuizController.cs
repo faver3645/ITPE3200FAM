@@ -27,6 +27,15 @@ namespace ITPE3200FAM.Controllers
             return View(quiz);
         }
 
+        // GET: /TakeQuiz/
+[HttpGet]
+public async Task<IActionResult> Index()
+{
+    var quizzes = await _context.Quizzes.ToListAsync();
+    return View(quizzes);
+}
+
+
         // POST: /TakeQuiz/Submit
         [HttpPost]
         public async Task<IActionResult> Submit(int quizId, string userName, Dictionary<int, int> answers)
