@@ -3218,19 +3218,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Muniira\\.nuget\\packages\\": {}
+    "C:\\Users\\Aliza Mudassar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\ITPE3200FAM.csproj",
+      "projectUniqueName": "C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\ITPE3200FAM.csproj",
       "projectName": "ITPE3200FAM",
-      "projectPath": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\ITPE3200FAM.csproj",
-      "packagesPath": "C:\\Users\\Muniira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\obj\\",
+      "projectPath": "C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\ITPE3200FAM.csproj",
+      "packagesPath": "C:\\Users\\Aliza Mudassar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Muniira\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Aliza Mudassar\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3286,24 +3286,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.20, 8.0.20]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.20, 8.0.20]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.20, 8.0.20]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.20, 8.0.20]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

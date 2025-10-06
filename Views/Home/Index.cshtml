@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "Welcome to MyQuiz";
+}
+
+<div class="hero-section text-center shadow-sm mb-5">
+    <h1 class="display-3 text-primary fw-bold">Welcome to MyQuiz 🎓</h1>
+    <p class="lead mt-3 text-muted">
+        MyQuiz is an interactive platform to create and take quizzes. Challenge yourself,
+        track your progress, and have fun learning!
+    </p>
+    <div class="mt-4">
+        <a asp-controller="Quiz" asp-action="Create" class="btn btn-success btn-lg me-3 px-4">
+            <i class="bi bi-plus-circle"></i> Create a New Quiz
+        </a>
+        <a asp-controller="TakeQuiz" asp-action="Index" class="btn btn-primary btn-lg px-4">
+            <i class="bi bi-play-circle"></i> Take a Quiz
+        </a>
+    </div>
+</div>
+
+<div class="row text-center">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0 p-3">
+            <h5>Easy to Use</h5>
+            <p class="text-muted">Quickly create quizzes with questions and answers.</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0 p-3">
+            <h5>Interactive</h5>
+            <p class="text-muted">Take quizzes and get instant feedback on your results.</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0 p-3">
+            <h5>Track Progress</h5>
+            <p class="text-muted">View performance and improve over time.</p>
+        </div>
+    </div>
+</div>
