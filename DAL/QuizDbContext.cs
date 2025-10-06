@@ -7,7 +7,7 @@ public class QuizDbContext : DbContext
 {
     public QuizDbContext(DbContextOptions<QuizDbContext> options) : base(options)
     {
-        Database.EnsureCreated();
+        //Database.EnsureCreated();
     }
 
     public DbSet<Quiz> Quizzes { get; set; }
