@@ -13,18 +13,6 @@
         <dt class="col-sm-2">Title</dt>
         <dd class="col-sm-10">@Model.Title</dd>
 
-        @if (Model.Questions != null && Model.Questions.Any())
-        {
-            <dt class="col-sm-2">Questions</dt>
-            <dd class="col-sm-10">
-                <ul>
-                    @foreach (var q in Model.Questions)
-                    {
-                        <li>@q.Text</li>
-                    }
-                </ul>
-            </dd>
-        }
     </dl>
 
     <form asp-action="DeleteConfirmed" asp-route-id="@Model.QuizId" method="post">

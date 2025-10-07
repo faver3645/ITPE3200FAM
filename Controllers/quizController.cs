@@ -34,18 +34,30 @@ using ITPE3200FAM.DAL;
         }
 
         // GET: /Quiz/Create
-        [HttpGet]
+       [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            var quiz = new Quiz();
+            // For å vise ett tomt spørsmål med to svaralternativer som start
+            quiz.Questions.Add(new Question
+            {
+                AnswerOptions = new List<AnswerOption>
+                {
+                    new AnswerOption(),
+                    new AnswerOption()
+                }
+            });
+            return View(quiz);
         }
 
         // POST: /Quiz/Create
-        [HttpPost]
+       [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Quiz quiz)
         {
             if (ModelState.IsValid)
             {
+                // Legger til quiz med tilhørende spørsmål og svaralternativer
                 _context.Quizzes.Add(quiz);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -57,7 +69,11 @@ using ITPE3200FAM.DAL;
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
-            var quiz = await _context.Quizzes.FindAsync(id);
+            var quiz = await _context.Quizzes
+                .Include(q => q.Questions)
+                .ThenInclude(q => q.AnswerOptions)
+                .FirstOrDefaultAsync(q => q.QuizId == id);
+
             if (quiz == null) return NotFound();
 
             return View(quiz);
@@ -97,4 +113,7 @@ using ITPE3200FAM.DAL;
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        
     }
+
+    

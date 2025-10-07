@@ -17,7 +17,7 @@
             "serverReadyAction": {
                 "action": "openExternally",
                 "pattern": "\\bNow listening on:\\s+(http?://\\S+)",
-                "uriFormat": "%s/quiz/index"
+                "uriFormat": "%s/home/index"
             },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
