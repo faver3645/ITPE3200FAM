@@ -21,9 +21,9 @@
             <td>@quiz.QuizId</td>
             <td>@quiz.Title</td>
             <td>
-                <a asp-action="Details" asp-route-id="@quiz.QuizId">Details</a> |
-                <a asp-action="Edit" asp-route-id="@quiz.QuizId">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@quiz.QuizId">Delete</a>
+                <a asp-action="Details" asp-route-id="@quiz.QuizId" class="btn btn-primary btn-sm">Details</a>
+                <a asp-action="Edit" asp-route-id="@quiz.QuizId" class="btn btn-success btn-sm">Edit</a>
+                <a asp-action="Delete" asp-route-id="@quiz.QuizId" class="btn btn-danger btn-sm">Delete</a>
             </td>
         </tr>
     }
