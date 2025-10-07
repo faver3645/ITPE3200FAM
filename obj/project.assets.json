@@ -2664,19 +2664,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aliza Mudassar\\.nuget\\packages\\": {}
+    "C:\\Users\\Muniira\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\ITPE3200FAM.csproj",
+      "projectUniqueName": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\ITPE3200FAM.csproj",
       "projectName": "ITPE3200FAM",
-      "projectPath": "C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\ITPE3200FAM.csproj",
-      "packagesPath": "C:\\Users\\Aliza Mudassar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\",
+      "projectPath": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\ITPE3200FAM.csproj",
+      "packagesPath": "C:\\Users\\Muniira\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Aliza Mudassar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Muniira\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2743,13 +2743,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\project.nuget.cache : '<' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0."
-    }
-  ]
+  }
 }
