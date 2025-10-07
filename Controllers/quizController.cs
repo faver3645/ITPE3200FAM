@@ -69,7 +69,11 @@ using ITPE3200FAM.DAL;
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
-            var quiz = await _context.Quizzes.FindAsync(id);
+            var quiz = await _context.Quizzes
+                .Include(q => q.Questions)
+                .ThenInclude(q => q.AnswerOptions)
+                .FirstOrDefaultAsync(q => q.QuizId == id);
+
             if (quiz == null) return NotFound();
 
             return View(quiz);
