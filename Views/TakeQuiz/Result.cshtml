@@ -1,9 +1,35 @@
 @model QuizResult
- 
-<h2>Quiz Result</h2>
- 
-<p><strong>User:</strong> @Model.UserName</p>
-<p><strong>Quiz:</strong> @Model.Quiz.Title</p>
-<p><strong>Score:</strong> @Model.Score / @Model.Quiz.Questions.Count</p>
- 
-<a asp-action="Index" asp-controller="Quiz" class="btn btn-primary">Back to Quizzes</a>
+@{
+    ViewData["Title"] = "Quiz Result";
+    var totalQuestions = Model.Quiz.Questions.Count;
+    var percentage = (int)((double)Model.Score / totalQuestions * 100);
+    string progressColor = percentage >= 80 ? "bg-success" : percentage >= 50 ? "bg-warning" : "bg-danger";
+}
+
+<h2 class="mb-4">Quiz Result: @Model.Quiz.Title</h2>
+
+<div class="card shadow-sm p-4 mb-4">
+    <p><strong>User:</strong> @Model.UserName</p>
+    <p><strong>Score:</strong> @Model.Score / @totalQuestions (@percentage%)</p>
+
+    <div class="progress mb-3" style="height: 25px;">
+        <div class="progress-bar @progressColor" role="progressbar" style="width: @percentage%;">@percentage%</div>
+    </div>
+
+    <p class="fw-bold">
+        @if (percentage >= 80)
+        {
+            <span class="text-success">Excellent! 🎉</span>
+        }
+        else if (percentage >= 50)
+        {
+            <span class="text-warning">Good job! Keep practicing.</span>
+        }
+        else
+        {
+            <span class="text-danger">You can do better! Try again.</span>
+        }
+    </p>
+</div>
+
+<a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-primary btn-lg">Back to Quizzes</a>

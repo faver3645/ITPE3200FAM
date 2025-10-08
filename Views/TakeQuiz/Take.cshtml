@@ -1,30 +1,42 @@
 @model Quiz
- 
-<h2>Take Quiz: @Model.Title</h2>
- 
+@{
+    ViewData["Title"] = $"Take Quiz: {Model.Title}";
+}
+
+<h2 class="mb-4">@Model.Title</h2>
+
 <form asp-action="Submit" method="post">
     <input type="hidden" name="quizId" value="@Model.QuizId" />
- 
-    <div class="form-group">
-        <label>Your name:</label>
-        <input type="text" name="userName" class="form-control" required />
+
+    <div class="mb-3">
+        <label for="userName" class="form-label">Your Name:</label>
+        <input type="text" name="userName" id="userName" class="form-control" required placeholder="Enter your name" />
     </div>
- 
-    @foreach (Question q in Model.Questions)
+
+    @for (int i = 0; i < Model.Questions.Count; i++)
     {
-        <div class="mb-3">
-            <h5>@q.Text</h5>
-            @foreach (AnswerOption opt in q.AnswerOptions)
-            {
+        var q = Model.Questions[i];
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Question @(i + 1): @q.Text</h5>
                 <div class="form-check">
-                    <input type="radio" class="form-check-input"
-                           name="answers[@q.QuestionId]" value="@opt.AnswerOptionId" />
-                    <label class="form-check-label">@opt.Text</label>
+                    @foreach (var option in q.AnswerOptions)
+                    {
+                        <div class="form-check mb-2">
+                            <input type="radio" class="form-check-input" 
+                                   name="answers[@q.QuestionId]" 
+                                   value="@option.AnswerOptionId" 
+                                   id="q@q.QuestionId-option@option.AnswerOptionId" />
+                            <label class="form-check-label" for="q@q.QuestionId-option@option.AnswerOptionId">
+                                @option.Text
+                            </label>
+                        </div>
+                    }
                 </div>
-            }
+            </div>
         </div>
     }
- 
-    <button type="submit" class="btn btn-success">Submit</button>
-    <a asp-action="Index" asp-controller="Quiz" class="btn btn-secondary">Cancel</a>
+
+    <button type="submit" class="btn btn-success btn-lg">Submit Quiz</button>
+    <a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-secondary btn-lg ms-2">Cancel</a>
 </form>
