@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\ITPE3200FAM.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\ITPE3200FAM.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\ITPE3200FAM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\ITPE3200FAM.csproj",
+        "projectName": "ITPE3200FAM",
+        "projectPath": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\ITPE3200FAM.csproj",
+        "packagesPath": "C:\\Users\\Muniira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Muniira\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> d8796e9bdf0a14e80b03116af9a8d2ee721690a6
         ],
         "originalTargetFrameworks": [
           "net8.0"
