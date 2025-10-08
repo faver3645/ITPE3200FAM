@@ -1,12 +1,14 @@
 @model ITPE3200FAM.Models.Quiz
 @{
-    ViewData["Title"] = "Create Quiz";
+    ViewData["Title"] = "Edit Quiz";
 }
 
-<h2>Create Quiz</h2>
+<h2>Edit Quiz</h2>
 
-<form asp-action="Create" method="post">
+<form asp-action="Update" method="post">
     @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="QuizId" />
+
     <div class="form-group mb-3">
         <label asp-for="Title"></label>
         <input asp-for="Title" class="form-control" />
@@ -16,29 +18,44 @@
     <div id="questions-container">
         @for (int i = 0; i < Model.Questions.Count; i++)
         {
-            <div class="question-block mb-4 border p-3">
+            <div class="question-block mb-4 border p-3 rounded">
                 <label>Question @(i + 1)</label>
+                <input type="hidden" name="Questions[@i].QuestionId" value="@Model.Questions[i].QuestionId" />
                 <input asp-for="Questions[i].Text" class="form-control mb-2" placeholder="Enter question text" />
 
                 <div class="answers-container">
                     @for (int j = 0; j < Model.Questions[i].AnswerOptions.Count; j++)
                     {
                         <div class="form-check mb-1">
-                            <input type="checkbox" name="Questions[@i].AnswerOptions[@j].IsCorrect" class="form-check-input" value="true" />
+                            <input type="hidden" name="Questions[@i].AnswerOptions[@j].AnswerOptionId" value="@Model.Questions[i].AnswerOptions[j].AnswerOptionId" />
+
+                            <!-- Checkbox først, hidden etter -->
+                            <input type="checkbox"
+                                name="Questions[@i].AnswerOptions[@j].IsCorrect"
+                                class="form-check-input"
+                                value="true"
+                                @(Model.Questions[i].AnswerOptions[j].IsCorrect ? "checked" : "") />
+
                             <input type="hidden" name="Questions[@i].AnswerOptions[@j].IsCorrect" value="false" />
-                            <input name="Questions[@i].AnswerOptions[@j].Text" class="form-control d-inline w-75" placeholder="Answer text" />
+
+                            <input name="Questions[@i].AnswerOptions[@j].Text"
+                                class="form-control d-inline w-75"
+                                placeholder="Answer text"
+                                value="@Model.Questions[i].AnswerOptions[j].Text" />
                         </div>
                     }
                 </div>
 
-                <button type="button" class="btn btn-sm btn-secondary mt-2 add-answer" data-question-index="@i">Add Answer</button>
+                <button type="button"
+                        class="btn btn-sm btn-secondary mt-2 add-answer"
+                        data-question-index="@i">Add Answer</button>
             </div>
         }
     </div>
 
     <button type="button" class="btn btn-secondary mb-3" id="add-question">Add Question</button>
     <br />
-    <button type="submit" class="btn btn-primary me-2">Save Quiz</button>
+    <button type="submit" class="btn btn-primary me-2">Save Changes</button>
     <a asp-action="Index" class="btn btn-secondary">Back to List</a>
 </form>
 
@@ -50,7 +67,7 @@ let questionCount = @Model.Questions.Count;
 document.getElementById("add-question").addEventListener("click", function() {
     let container = document.getElementById("questions-container");
     let questionHtml = `
-    <div class="question-block mb-4 border p-3">
+    <div class="question-block mb-4 border p-3 rounded">
         <label>Question ${questionCount + 1}</label>
         <input name="Questions[${questionCount}].Text" class="form-control mb-2" placeholder="Enter question text" />
         <div class="answers-container">
@@ -67,21 +84,21 @@ document.getElementById("add-question").addEventListener("click", function() {
         </div>
         <button type="button" class="btn btn-sm btn-secondary mt-2 add-answer" data-question-index="${questionCount}">Add Answer</button>
     </div>
-`;
+    `;
     container.insertAdjacentHTML("beforeend", questionHtml);
     questionCount++;
 });
 
 // Legg til flere svaralternativer
 document.addEventListener("click", function(e){
-    if(e.target && e.target.classList.contains("add-answer")){
+    if (e.target && e.target.classList.contains("add-answer")) {
         let questionIndex = e.target.getAttribute("data-question-index");
         let container = e.target.previousElementSibling;
         let answerCount = container.children.length;
         let html = `
             <div class="form-check mb-1">
-                <input type="checkbox" name="Questions[${questionIndex}].AnswerOptions[${answerCount}].IsCorrect" value="true" class="form-check-input" />
                 <input type="hidden" name="Questions[${questionIndex}].AnswerOptions[${answerCount}].IsCorrect" value="false" />
+                <input type="checkbox" name="Questions[${questionIndex}].AnswerOptions[${answerCount}].IsCorrect" value="true" class="form-check-input" />
                 <input name="Questions[${questionIndex}].AnswerOptions[${answerCount}].Text" class="form-control d-inline w-75" placeholder="Answer text" />
             </div>
         `;

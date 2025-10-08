@@ -1,4 +1,5 @@
 @model QuizResult
+<<<<<<< HEAD
 @{
     ViewData["Title"] = "Quiz Result";
     var totalQuestions = Model.Quiz.Questions.Count;
@@ -33,3 +34,13 @@
 </div>
 
 <a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-primary btn-lg">Back to Quizzes</a>
+=======
+ 
+<h2>Quiz Result</h2>
+ 
+<p><strong>User:</strong> @Model.UserName</p>
+<p><strong>Quiz:</strong> @Model.Quiz.Title</p>
+<p><strong>Score:</strong> @Model.Score / @Model.Quiz.Questions.Count</p>
+ 
+<a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-primary">Back to Quizzes</a>
+>>>>>>> a709c3a8c3ffd4f0f6ac87fc1ef1e2818762b643

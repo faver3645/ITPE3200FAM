@@ -36,12 +36,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/Quiz/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/Quiz/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/Quiz/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/TakeQuiz/Index.cshtml]
