@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using MyShop.Models;
+using ITPE3200FAM.Models;
 
-namespace MyShop.DAL
+namespace ITPE3200FAM.DAL
 {
-    public class QuizRepository
+    public class QuizRepository : IQuizRepository
     {
         private readonly QuizDbContext _db;
 
@@ -12,29 +12,35 @@ namespace MyShop.DAL
             _db = db;
         }
 
-        public async Task<IEnumerable<Quiz>> GetAllAsync()
+        public async Task<IEnumerable<Quiz>> GetAll()
         {
-            return await _db.Quizzes.ToListAsync();
+            return await _db.Quizzes
+                .Include(q => q.Questions)
+                .ThenInclude(a => a.AnswerOptions)
+                .ToListAsync();
         }
 
-        public async Task<Quiz?> GetQuizByIdAsync(int id)
+        public async Task<Quiz?> GetQuizById(int id)
         {
-            return await _db.Quizzes.FindAsync(id);
+            return await _db.Quizzes
+                .Include(q => q.Questions)
+                .ThenInclude(a => a.AnswerOptions)
+                .FirstOrDefaultAsync(q => q.QuizId == id);
         }
 
-        public async Task CreateAsync(Quiz quiz)
+        public async Task Create(Quiz quiz)
         {
             _db.Quizzes.Add(quiz);
             await _db.SaveChangesAsync();
         }
 
-        public async Task UpdateAsync(Quiz quiz)
+        public async Task Update(Quiz quiz)
         {
             _db.Quizzes.Update(quiz);
             await _db.SaveChangesAsync();
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public async Task<bool> Delete(int id)
         {
             var quiz = await _db.Quizzes.FindAsync(id);
             if (quiz == null)

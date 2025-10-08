@@ -12,6 +12,8 @@ builder.Services.AddDbContext<QuizDbContext>(options =>
         builder.Configuration.GetConnectionString("QuizDbContextConnection"));
 });
 
+builder.Services.AddScoped<IQuizRepository, QuizRepository>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

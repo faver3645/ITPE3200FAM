@@ -2664,16 +2664,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Admin\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\Muniira\\.nuget\\packages\\": {}
->>>>>>> d8796e9bdf0a14e80b03116af9a8d2ee721690a6
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\ITPE3200FAM.csproj",
       "projectName": "ITPE3200FAM",
       "projectPath": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\ITPE3200FAM.csproj",
@@ -2682,16 +2677,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-      "projectUniqueName": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\ITPE3200FAM.csproj",
-      "projectName": "ITPE3200FAM",
-      "projectPath": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\ITPE3200FAM.csproj",
-      "packagesPath": "C:\\Users\\Muniira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\Muniira\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> d8796e9bdf0a14e80b03116af9a8d2ee721690a6
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2757,5 +2742,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

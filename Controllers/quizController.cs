@@ -1,119 +1,112 @@
 using Microsoft.AspNetCore.Mvc;
-namespace ITPE3200FAM.Controllers;
-using Microsoft.EntityFrameworkCore;
 using ITPE3200FAM.Models;
 using ITPE3200FAM.DAL;
 
+namespace ITPE3200FAM.Controllers
+{
     public class QuizController : Controller
     {
-        private readonly QuizDbContext _context;
+        private readonly IQuizRepository _repo;
 
-        public QuizController(QuizDbContext context)
+        public QuizController(IQuizRepository repo)
         {
-            _context = context;
+            _repo = repo;
         }
 
         // GET: /Quiz
         public async Task<IActionResult> Index()
         {
-            var quizzes = await _context.Quizzes.ToListAsync();
+            var quizzes = await _repo.GetAll();
             return View(quizzes);
         }
 
         // GET: /Quiz/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            var quiz = await _context.Quizzes
-                .Include(q => q.Questions)
-                .ThenInclude(q => q.AnswerOptions)
-                .FirstOrDefaultAsync(q => q.QuizId == id);
-
-            if (quiz == null) return NotFound();
+            var quiz = await _repo.GetQuizById(id);
+            if (quiz == null)
+                return NotFound();
 
             return View(quiz);
         }
 
         // GET: /Quiz/Create
-       [HttpGet]
+        [HttpGet]
         public IActionResult Create()
         {
-            var quiz = new Quiz();
-            // For å vise ett tomt spørsmål med to svaralternativer som start
-            quiz.Questions.Add(new Question
+            var quiz = new Quiz
             {
-                AnswerOptions = new List<AnswerOption>
+                Questions = new List<Question>
                 {
-                    new AnswerOption(),
-                    new AnswerOption()
+                    new Question
+                    {
+                        AnswerOptions = new List<AnswerOption>
+                        {
+                            new AnswerOption(),
+                            new AnswerOption()
+                        }
+                    }
                 }
-            });
+            };
             return View(quiz);
         }
 
         // POST: /Quiz/Create
-       [HttpPost]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Quiz quiz)
         {
-            if (ModelState.IsValid)
-            {
-                // Legger til quiz med tilhørende spørsmål og svaralternativer
-                _context.Quizzes.Add(quiz);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(quiz);
+            if (!ModelState.IsValid)
+                return View(quiz);
+
+            await _repo.Create(quiz);
+            return RedirectToAction(nameof(Index));
         }
 
-        // GET: /Quiz/Edit/5
+        // GET: /Quiz/Update/5
         [HttpGet]
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Update(int id)
         {
-            var quiz = await _context.Quizzes
-                .Include(q => q.Questions)
-                .ThenInclude(q => q.AnswerOptions)
-                .FirstOrDefaultAsync(q => q.QuizId == id);
-
-            if (quiz == null) return NotFound();
+            var quiz = await _repo.GetQuizById(id);
+            if (quiz == null)
+                return NotFound();
 
             return View(quiz);
         }
 
-        // POST: /Quiz/Edit/5
+        // POST: /Quiz/Update/5
         [HttpPost]
-        public async Task<IActionResult> Edit(Quiz quiz)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Update(Quiz quiz)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Quizzes.Update(quiz);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(quiz);
+            if (!ModelState.IsValid)
+                return View(quiz);
+
+            await _repo.Update(quiz);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: /Quiz/Delete/5
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-            var quiz = await _context.Quizzes.FindAsync(id);
-            if (quiz == null) return NotFound();
+            var quiz = await _repo.GetQuizById(id);
+            if (quiz == null)
+                return NotFound();
 
             return View(quiz);
         }
 
         // POST: /Quiz/DeleteConfirmed/5
-        [HttpPost]
+        [HttpPost, ActionName("DeleteConfirmed")]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var quiz = await _context.Quizzes.FindAsync(id);
-            if (quiz == null) return NotFound();
+            bool deleted = await _repo.Delete(id);
+            if (!deleted)
+                return NotFound();
 
-            _context.Quizzes.Remove(quiz);
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        
     }
-
-    
+}
