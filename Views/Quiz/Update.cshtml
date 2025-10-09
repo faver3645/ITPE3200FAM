@@ -1,27 +1,35 @@
 @model ITPE3200FAM.Models.Quiz
 @{
-    ViewData["Title"] = "Edit Quiz";
+    ViewData["Title"] = "Update Quiz";
 }
 
 <h2>Edit Quiz</h2>
 
 <form asp-action="Update" method="post">
     @Html.AntiForgeryToken()
+
+    <!-- Valideringssummary -->
+    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
     <input type="hidden" asp-for="QuizId" />
 
+    <!-- Quiz Title -->
     <div class="form-group mb-3">
-        <label asp-for="Title"></label>
+        <label asp-for="Title"></label><span class="text-danger">*</span>
         <input asp-for="Title" class="form-control" />
         <span asp-validation-for="Title" class="text-danger"></span>
     </div>
 
+    <!-- Questions -->
     <div id="questions-container">
         @for (int i = 0; i < Model.Questions.Count; i++)
         {
             <div class="question-block mb-4 border p-3 rounded">
                 <label>Question @(i + 1)</label>
                 <input type="hidden" name="Questions[@i].QuestionId" value="@Model.Questions[i].QuestionId" />
+
                 <input asp-for="Questions[i].Text" class="form-control mb-2" placeholder="Enter question text" />
+                <span asp-validation-for="Questions[i].Text" class="text-danger"></span>
 
                 <div class="answers-container">
                     @for (int j = 0; j < Model.Questions[i].AnswerOptions.Count; j++)
@@ -39,9 +47,10 @@
                             <input type="hidden" name="Questions[@i].AnswerOptions[@j].IsCorrect" value="false" />
 
                             <input name="Questions[@i].AnswerOptions[@j].Text"
-                                class="form-control d-inline w-75"
-                                placeholder="Answer text"
-                                value="@Model.Questions[i].AnswerOptions[j].Text" />
+                                   class="form-control d-inline w-75"
+                                   placeholder="Answer text"
+                                   value="@Model.Questions[i].AnswerOptions[j].Text" />
+                            <span asp-validation-for="Questions[i].AnswerOptions[j].Text" class="text-danger"></span>
                         </div>
                     }
                 </div>
