@@ -133,6 +133,16 @@ C:\Users\Admin\OneDrive - OsloMet\FAMExam\ITPE3200FAM\bin\Debug\net8.0\package.j
 C:\Users\Admin\OneDrive - OsloMet\FAMExam\ITPE3200FAM\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\Admin\OneDrive - OsloMet\FAMExam\ITPE3200FAM\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
 >>>>>>> 1e02350c1beda7b004a31314c5158ba7ae5f0881
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.csproj.AssemblyReference.cache
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.AssemblyInfoInputs.cache
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.AssemblyInfo.cs
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.csproj.CoreCompileInputs.cache
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.RazorAssemblyInfo.cache
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.RazorAssemblyInfo.cs
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.sourcelink.json
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\appsettings.json
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\package-lock.json
@@ -241,16 +251,6 @@ C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debu
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.csproj.AssemblyReference.cache
-C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\rpswa.dswa.cache.json
-C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.AssemblyInfoInputs.cache
-C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.AssemblyInfo.cs
-C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.csproj.CoreCompileInputs.cache
-C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.RazorAssemblyInfo.cache
-C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.RazorAssemblyInfo.cs
-C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.sourcelink.json
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
