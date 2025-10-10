@@ -1,5 +1,4 @@
 @model QuizResult
-<<<<<<< HEAD
 @{
     ViewData["Title"] = "Quiz Result";
     var totalQuestions = Model.Quiz.Questions.Count;
@@ -34,7 +33,6 @@
 </div>
 
 <a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-primary btn-lg">Back to Quizzes</a>
-=======
  
 <h2>Quiz Result</h2>
  
@@ -42,5 +40,12 @@
 <p><strong>Quiz:</strong> @Model.Quiz.Title</p>
 <p><strong>Score:</strong> @Model.Score / @Model.Quiz.Questions.Count</p>
  
-<a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-primary">Back to Quizzes</a>
->>>>>>> a709c3a8c3ffd4f0f6ac87fc1ef1e2818762b643
+<form asp-action="SaveAttempt" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="quizId" value="@Model.QuizId" />
+    <input type="hidden" name="userName" value="@Model.UserName" />
+    <input type="hidden" name="score" value="@Model.Score" />
+
+    <button type="submit" class="btn btn-success me-2">Save Attempt</button>
+    <a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-primary">Back to Quizzes</a>
+</form>

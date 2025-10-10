@@ -57,6 +57,7 @@ namespace ITPE3200FAM.Controllers
             var result = new QuizResult
             {
                 UserName = userName,
+                QuizId = quiz.QuizId,
                 Quiz = quiz,
                 Score = score
             };
@@ -69,6 +70,39 @@ namespace ITPE3200FAM.Controllers
         public IActionResult Result(QuizResult result)
         {
             return View(result);
+        }
+
+        // GET: /TakeQuiz/Attempts/5
+        [HttpGet]
+        public async Task<IActionResult> Attempts(int id) // id = QuizId
+        {
+            var results = await _repo.GetResultsForQuizAsync(id);
+
+            if (results == null || !results.Any())
+                results = new List<QuizResult>(); // alltid send en tom liste i stedet for null
+
+            return View(results);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SaveAttempt(int quizId, string userName, int score)
+        {
+            var quiz = await _repo.GetQuizById(quizId);
+            if (quiz == null)
+                return NotFound();
+
+            var result = new QuizResult
+            {
+                UserName = userName,
+                QuizId = quiz.QuizId,
+                Quiz = quiz,
+                Score = score
+            };
+
+            await _repo.AddResultAsync(result);
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }
