@@ -50,5 +50,22 @@ namespace ITPE3200FAM.DAL
             await _db.SaveChangesAsync();
             return true;
         }
+
+        public async Task AddResultAsync(QuizResult result)
+        {
+            _db.UserQuizResults.Add(result);
+            await _db.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<QuizResult>> GetResultsForQuizAsync(int quizId)
+        {
+            return await _db.UserQuizResults
+                .Include(r => r.Quiz)
+                    .ThenInclude(q => q.Questions)
+                        .ThenInclude(qt => qt.AnswerOptions)
+                .Where(r => r.QuizId == quizId)
+                .OrderByDescending(r => r.QuizResultId)
+                .ToListAsync();
+        }
     }
 }

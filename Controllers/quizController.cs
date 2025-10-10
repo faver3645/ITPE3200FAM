@@ -56,6 +56,15 @@ namespace ITPE3200FAM.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Quiz quiz)
         {
+             for (int i = 0; i < quiz.Questions.Count; i++)
+            {
+                var question = quiz.Questions[i];
+                if (!question.AnswerOptions.Any(a => a.IsCorrect))
+                {
+                    ModelState.AddModelError("", $"Question {i + 1} must have at least one correct answer.");
+                }
+            }
+            
             if (!ModelState.IsValid)
                 return View(quiz);
 
@@ -79,6 +88,15 @@ namespace ITPE3200FAM.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(Quiz quiz)
         {
+            for (int i = 0; i < quiz.Questions.Count; i++)
+            {
+                var question = quiz.Questions[i];
+                if (!question.AnswerOptions.Any(a => a.IsCorrect))
+                {
+                    ModelState.AddModelError("", $"Question {i + 1} must have at least one correct answer.");
+                }
+            }
+
             if (!ModelState.IsValid)
                 return View(quiz);
 

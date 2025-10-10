@@ -1,0 +1,65 @@
+@model IEnumerable<ITPE3200FAM.Models.QuizResult>
+
+@{
+    ViewData["Title"] = "Quiz Attempts";
+}
+
+<h2 class="mb-4">Quiz Attempts</h2>
+
+@if (!Model.Any())
+{
+    <p>No attempts for this quiz yet.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Attempt</th>
+                <th>User</th>
+                <th>Score</th>
+                <th>Percentage</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int attemptNumber = Model.Count();
+            }
+            @foreach (var attempt in Model.OrderByDescending(a => a.QuizResultId))
+            {
+                var totalQuestions = attempt.Quiz?.Questions?.Count ?? 0;
+                var percentage = totalQuestions > 0 ? (double)attempt.Score / totalQuestions * 100 : 0;
+                string progressColor = percentage >= 80 ? "text-success" :
+                                       percentage >= 50 ? "text-warning" : "text-danger";
+
+                <tr>
+                    <td>@attemptNumber</td>
+                    <td>@attempt.UserName</td>
+                    <td>@attempt.Score / @totalQuestions</td>
+                    <td>@percentage.ToString("0")%</td>
+                    <td class="@progressColor">
+                        @if (percentage >= 80)
+                        {
+                            <span>Excellent 🎉</span>
+                        }
+                        else if (percentage >= 50)
+                        {
+                            <span>Good job</span>
+                        }
+                        else
+                        {
+                            <span>Try again</span>
+                        }
+                    </td>
+                </tr>
+
+                attemptNumber--;
+            }
+        </tbody>
+    </table>
+}
+
+<p>
+    <a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-secondary">Back to Quizzes</a>
+</p>
