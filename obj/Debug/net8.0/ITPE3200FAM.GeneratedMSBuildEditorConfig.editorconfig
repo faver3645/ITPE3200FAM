@@ -9,65 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ITPE3200FAM
 build_property.RootNamespace = ITPE3200FAM
-build_property.ProjectDir = C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\
+build_property.ProjectDir = C:\Users\Muniira\OneDrive - OsloMet\Skrivebord\FAMexam\ITPE3200FAM\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM
+build_property.MSBuildProjectDirectory = C:\Users\Muniira\OneDrive - OsloMet\Skrivebord\FAMexam\ITPE3200FAM
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/Home/Index.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/Quiz/Create.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/Quiz/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/Quiz/Delete.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/Quiz/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/Quiz/Details.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/Quiz/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/Quiz/Index.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/Quiz/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/Quiz/Update.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/Quiz/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/TakeQuiz/Attempts.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/TakeQuiz/Attempts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFrZVF1aXpcQXR0ZW1wdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/TakeQuiz/Index.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/TakeQuiz/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFrZVF1aXpcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/TakeQuiz/Result.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/TakeQuiz/Result.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFrZVF1aXpcUmVzdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/TakeQuiz/Take.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/TakeQuiz/Take.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFrZVF1aXpcVGFrZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/_ViewImports.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/_ViewStart.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aliza Mudassar/OneDrive - OsloMet/webapplikasjoner/ITPE3200FAM/Views/Shared/_Layout.cshtml]
+[C:/Users/Muniira/OneDrive - OsloMet/Skrivebord/FAMexam/ITPE3200FAM/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-yvdpyuv6f2
