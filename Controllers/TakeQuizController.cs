@@ -15,7 +15,6 @@ namespace ITPE3200FAM.Controllers
             _logger = logger;
         }
 
-        // GET: /TakeQuiz/
         [HttpGet]
         public async Task<IActionResult> Index()
         {
@@ -28,7 +27,6 @@ namespace ITPE3200FAM.Controllers
             return View(quizzes);
         }
 
-        // GET: /TakeQuiz/Take/5
         [HttpGet]
         public async Task<IActionResult> Take(int id)
         {
@@ -42,10 +40,9 @@ namespace ITPE3200FAM.Controllers
             return View(quiz);
         }
 
-        // POST: /TakeQuiz/Submit
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Submit(int quizId, string userName, Dictionary<int, int> answers)
+        public async Task<IActionResult> Submit(int quizId, string userName, Dictionary<string, string> answers)
         {
             var quiz = await _repo.GetQuizById(quizId);
             if (quiz == null)
@@ -54,16 +51,49 @@ namespace ITPE3200FAM.Controllers
                 return NotFound("Quiz not found");
             }
 
+            // SERVER-SIDE VALIDATION
+            bool hasErrors = false;
+
+            if (string.IsNullOrWhiteSpace(userName))
+            {
+                ModelState.AddModelError("userName", "User name is required.");
+                hasErrors = true;
+            }
+
+            var unansweredQuestions = new List<int>();
+            foreach (var question in quiz.Questions)
+            {
+                if (!answers.ContainsKey(question.QuestionId.ToString()))
+                    unansweredQuestions.Add(question.QuestionId);
+            }
+
+            if (unansweredQuestions.Any())
+            {
+                // legg bare til én samlet feil på toppen
+                ModelState.AddModelError("", "Please answer all questions before submitting.");
+                hasErrors = true;
+            }
+
+            // SEND SVAR TILBAKE TIL VIEW
+            ViewData["UserName"] = userName;
+            ViewData["Answers"] = answers;
+            ViewData["Unanswered"] = unansweredQuestions;
+
+            if (hasErrors)
+                return View("Take", quiz);
+
+            // BEREGN SCORE
             int score = 0;
             foreach (var question in quiz.Questions)
             {
-                if (answers.ContainsKey(question.QuestionId))
+                if (answers.TryGetValue(question.QuestionId.ToString(), out var selectedOptionIdStr))
                 {
-                    var selectedOption = question.AnswerOptions
-                        .FirstOrDefault(o => o.AnswerOptionId == answers[question.QuestionId]);
-
-                    if (selectedOption != null && selectedOption.IsCorrect)
-                        score++;
+                    if (int.TryParse(selectedOptionIdStr, out int selectedOptionId))
+                    {
+                        var selectedOption = question.AnswerOptions.FirstOrDefault(o => o.AnswerOptionId == selectedOptionId);
+                        if (selectedOption != null && selectedOption.IsCorrect)
+                            score++;
+                    }
                 }
             }
 
