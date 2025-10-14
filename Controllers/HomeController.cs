@@ -9,9 +9,5 @@ namespace ITPE3200FAM.Controllers
             return View();
         }
 
-        public IActionResult About()
-        {
-            return View();
-        }
     }
 }

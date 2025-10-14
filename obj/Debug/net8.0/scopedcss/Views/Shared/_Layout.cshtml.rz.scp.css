@@ -36,10 +36,71 @@ button.accept-policy[b-yvdpyuv6f2] {
   line-height: inherit;
 }
 
+/* Footer base */
 .footer[b-yvdpyuv6f2] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+    background-color: #f1f3f6; 
+    padding: 2rem 0;
+    text-align: left;
 }
+
+/* Footer cards */
+.footer-card[b-yvdpyuv6f2] {
+    background-color: #ffffff; 
+    padding: 1.5rem;
+    height: 100%;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.footer-card:hover[b-yvdpyuv6f2] {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Footer headings */
+.footer-card h5[b-yvdpyuv6f2] {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-link[b-yvdpyuv6f2] {
+    display: block;
+    color: #495057 !important; 
+    margin-bottom: 0.5rem;
+    text-decoration: none !important; 
+    transition: color 0.3s, transform 0.3s, font-weight 0.3s;
+}
+
+/* Hover, focus og active */
+.footer-link:hover[b-yvdpyuv6f2],
+.footer-link:focus[b-yvdpyuv6f2],
+.footer-link:active[b-yvdpyuv6f2] {
+    color: #1b6ec2 !important; 
+    transform: translateX(5px);
+    font-weight: 600;
+    text-decoration: none !important; 
+}
+
+/* Footer bottom text */
+.footer .text-center[b-yvdpyuv6f2] {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+/* Divider */
+.footer hr[b-yvdpyuv6f2] {
+    border-color: #e5e5e5;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 576px) {
+    .footer .footer-card[b-yvdpyuv6f2] {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
