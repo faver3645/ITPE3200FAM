@@ -133,7 +133,6 @@ C:\Users\Admin\OneDrive - OsloMet\FAMExam\ITPE3200FAM\obj\Debug\net8.0\refint\IT
 C:\Users\Admin\OneDrive - OsloMet\FAMExam\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.pdb
 C:\Users\Admin\OneDrive - OsloMet\FAMExam\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.genruntimeconfig.cache
 C:\Users\Admin\OneDrive - OsloMet\FAMExam\ITPE3200FAM\obj\Debug\net8.0\ref\ITPE3200FAM.dll
-<<<<<<< HEAD
 C:\Users\Muniira\OneDrive - OsloMet\Skrivebord\FAMexam\ITPE3200FAM\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Muniira\OneDrive - OsloMet\Skrivebord\FAMexam\ITPE3200FAM\bin\Debug\net8.0\appsettings.json
 C:\Users\Muniira\OneDrive - OsloMet\Skrivebord\FAMexam\ITPE3200FAM\bin\Debug\net8.0\package-lock.json
@@ -278,7 +277,7 @@ C:\Users\Muniira\OneDrive - OsloMet\Skrivebord\FAMexam\ITPE3200FAM\obj\Debug\net
 C:\Users\Muniira\OneDrive - OsloMet\Skrivebord\FAMexam\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.pdb
 C:\Users\Muniira\OneDrive - OsloMet\Skrivebord\FAMexam\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.genruntimeconfig.cache
 C:\Users\Muniira\OneDrive - OsloMet\Skrivebord\FAMexam\ITPE3200FAM\obj\Debug\net8.0\ref\ITPE3200FAM.dll
-=======
+>>>>>>> bd5072516e1458257c456d1e056832d526396f10
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\appsettings.json
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\package-lock.json
@@ -304,8 +303,17 @@ C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debu
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Serilog.dll
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\Serilog.Sinks.File.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\SQLitePCLRaw.core.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
@@ -315,6 +323,7 @@ C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debu
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\System.Composition.Hosting.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -413,4 +422,3 @@ C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debu
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.pdb
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ITPE3200FAM.genruntimeconfig.cache
 C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM\obj\Debug\net8.0\ref\ITPE3200FAM.dll
->>>>>>> bd5072516e1458257c456d1e056832d526396f10
