@@ -6,17 +6,19 @@
     string progressColor = percentage >= 80 ? "bg-success" : percentage >= 50 ? "bg-warning" : "bg-danger";
 }
 
-<h2 class="mb-4">Quiz Result: @Model.Quiz.Title</h2>
+<h2 class="mb-4 text-center">Quiz Result: @Model.Quiz.Title</h2>
 
-<div class="card shadow-sm p-4 mb-4">
+<div class="card shadow-sm p-4 mb-4 mx-auto" style="max-width: 600px;">
     <p><strong>User:</strong> @Model.UserName</p>
     <p><strong>Score:</strong> @Model.Score / @totalQuestions (@percentage%)</p>
 
     <div class="progress mb-3" style="height: 25px;">
-        <div class="progress-bar @progressColor" role="progressbar" style="width: @percentage%;">@percentage%</div>
+        <div class="progress-bar @progressColor" role="progressbar" style="width: @percentage%;">
+            @percentage%
+        </div>
     </div>
 
-    <p class="fw-bold">
+    <p class="fw-bold text-center">
         @if (percentage >= 80)
         {
             <span class="text-success">Excellent! 🎉</span>
@@ -30,22 +32,15 @@
             <span class="text-danger">You can do better! Try again.</span>
         }
     </p>
+
+    <form asp-action="SaveAttempt" method="post" class="text-center mt-4">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="quizId" value="@Model.QuizId" />
+        <input type="hidden" name="userName" value="@Model.UserName" />
+        <input type="hidden" name="score" value="@Model.Score" />
+
+        <button type="submit" class="btn btn-success me-2">Save Attempt</button>
+        <a asp-action="Take" asp-route-id="@Model.QuizId" class="btn btn-warning me-2">Try Again 🔁</a>
+        <a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-primary">Back to Quizzes</a>
+    </form>
 </div>
-
-<a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-primary btn-lg">Back to Quizzes</a>
- 
-<h2>Quiz Result</h2>
- 
-<p><strong>User:</strong> @Model.UserName</p>
-<p><strong>Quiz:</strong> @Model.Quiz.Title</p>
-<p><strong>Score:</strong> @Model.Score / @Model.Quiz.Questions.Count</p>
- 
-<form asp-action="SaveAttempt" method="post">
-    @Html.AntiForgeryToken()
-    <input type="hidden" name="quizId" value="@Model.QuizId" />
-    <input type="hidden" name="userName" value="@Model.UserName" />
-    <input type="hidden" name="score" value="@Model.Score" />
-
-    <button type="submit" class="btn btn-success me-2">Save Attempt</button>
-    <a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-primary">Back to Quizzes</a>
-</form>
