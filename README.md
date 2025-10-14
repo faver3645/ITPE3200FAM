@@ -1,0 +1,18 @@
+# MyQuiz Web Application
+
+## Project Overview
+
+**MyQuiz** is a web application built using **.NET Core 8.0** with the **MVC framework**.  
+It is a **Minimum Viable Product (MVP)** demonstrating the core functionality of creating and taking quizzes.  
+The app uses **SQLite** as the database and implements a **Repository pattern** for clean separation of data access logic.
+
+---
+
+## Tech Stack
+
+- **Backend:** .NET Core 8.0, MVC  
+- **Frontend:** Bootstrap 5, Razor Views  
+- **Database:** SQLite  
+- **Other:** Entity Framework Core, Dependency Injection  
+
+---
