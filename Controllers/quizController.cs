@@ -1,22 +1,30 @@
 using Microsoft.AspNetCore.Mvc;
 using ITPE3200FAM.Models;
 using ITPE3200FAM.DAL;
+using Microsoft.Extensions.Logging;
 
 namespace ITPE3200FAM.Controllers
 {
     public class QuizController : Controller
     {
         private readonly IQuizRepository _repo;
+        private readonly ILogger<QuizController> _logger;
 
-        public QuizController(IQuizRepository repo)
+        public QuizController(IQuizRepository repo, ILogger<QuizController> logger)
         {
             _repo = repo;
+            _logger = logger;
         }
 
         // GET: /Quiz
         public async Task<IActionResult> Index()
         {
             var quizzes = await _repo.GetAll();
+            if (quizzes == null)
+            {
+                _logger.LogError("[QuizController] No quizzes found when executing _repo.GetAll()");
+                return NotFound("Quiz list not found");
+            }
             return View(quizzes);
         }
 
@@ -25,7 +33,10 @@ namespace ITPE3200FAM.Controllers
         {
             var quiz = await _repo.GetQuizById(id);
             if (quiz == null)
-                return NotFound();
+            {
+                _logger.LogError("[QuizController] Quiz not found for QuizId {QuizId:0000}", id);
+                return NotFound("Quiz not found");
+            }
 
             return View(quiz);
         }
@@ -56,7 +67,7 @@ namespace ITPE3200FAM.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Quiz quiz)
         {
-             for (int i = 0; i < quiz.Questions.Count; i++)
+            for (int i = 0; i < quiz.Questions.Count; i++)
             {
                 var question = quiz.Questions[i];
                 if (!question.AnswerOptions.Any(a => a.IsCorrect))
@@ -64,11 +75,17 @@ namespace ITPE3200FAM.Controllers
                     ModelState.AddModelError("", $"Question {i + 1} must have at least one correct answer.");
                 }
             }
-            
+
             if (!ModelState.IsValid)
                 return View(quiz);
 
-            await _repo.Create(quiz);
+            bool created = await _repo.Create(quiz);
+            if (!created)
+            {
+                _logger.LogWarning("[QuizController] Quiz creation failed {@Quiz}", quiz);
+                return View(quiz);
+            }
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -78,8 +95,10 @@ namespace ITPE3200FAM.Controllers
         {
             var quiz = await _repo.GetQuizById(id);
             if (quiz == null)
-                return NotFound();
-
+            {
+                _logger.LogError("[QuizController] Quiz not found when updating QuizId {QuizId:0000}", id);
+                return BadRequest("Quiz not found");
+            }
             return View(quiz);
         }
 
@@ -100,7 +119,13 @@ namespace ITPE3200FAM.Controllers
             if (!ModelState.IsValid)
                 return View(quiz);
 
-            await _repo.Update(quiz);
+            bool updated = await _repo.Update(quiz);
+            if (!updated)
+            {
+                _logger.LogWarning("[QuizController] Quiz update failed {@Quiz}", quiz);
+                return View(quiz);
+            }
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -110,8 +135,10 @@ namespace ITPE3200FAM.Controllers
         {
             var quiz = await _repo.GetQuizById(id);
             if (quiz == null)
-                return NotFound();
-
+            {
+                _logger.LogError("[QuizController] Quiz not found for QuizId {QuizId:0000}", id);
+                return BadRequest("Quiz not found");
+            }
             return View(quiz);
         }
 
@@ -122,7 +149,10 @@ namespace ITPE3200FAM.Controllers
         {
             bool deleted = await _repo.Delete(id);
             if (!deleted)
-                return NotFound();
+            {
+                _logger.LogError("[QuizController] Quiz deletion failed for QuizId {QuizId:0000}", id);
+                return BadRequest("Quiz deletion failed");
+            }
 
             return RedirectToAction(nameof(Index));
         }
