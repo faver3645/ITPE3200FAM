@@ -1,6 +1,8 @@
 @model Quiz
 @{
     ViewData["Title"] = $"Take Quiz: {Model.Title}";
+    var answers = ViewData["Answers"] as Dictionary<string, string> ?? new Dictionary<string, string>();
+    var unanswered = ViewData["Unanswered"] as List<int> ?? new List<int>();
 }
 
 <h2 class="mb-4">@Model.Title</h2>
@@ -8,41 +10,54 @@
 <form asp-action="Submit" method="post">
     <input type="hidden" name="quizId" value="@Model.QuizId" />
 
+    <!-- USER NAME -->
     <div class="mb-3">
         <label for="userName" class="form-label">Your Name:</label>
-        <input type="text" name="userName" id="userName" class="form-control" required placeholder="Enter your name" />
+        <input type="text"
+               name="userName"
+               id="userName"
+               class="form-control"
+               value="@ViewData["UserName"]"
+               placeholder="Enter your name" />
+        <span class="text-danger">@Html.ValidationMessage("userName")</span>
     </div>
 
+    <!-- QUESTIONS -->
     @for (int i = 0; i < Model.Questions.Count; i++)
     {
         var q = Model.Questions[i];
-        <div class="card mb-4 shadow-sm">
+        <div class="card mb-4 shadow-sm @(unanswered.Contains(q.QuestionId) ? "border-danger" : "")">
             <div class="card-body">
                 <h5 class="card-title">Question @(i + 1): @q.Text</h5>
+
                 <div class="form-check">
                     @foreach (var option in q.AnswerOptions)
                     {
+                        var isChecked = answers.TryGetValue(q.QuestionId.ToString(), out var selectedId)
+                                        && selectedId == option.AnswerOptionId.ToString();
+
                         <div class="form-check mb-2">
-                            <input type="radio" class="form-check-input" 
-                                   name="answers[@q.QuestionId]" 
-                                   value="@option.AnswerOptionId" 
-                                   id="q@q.QuestionId-option@option.AnswerOptionId" />
+                            <input type="radio"
+                                   class="form-check-input"
+                                   name="answers[@q.QuestionId]"
+                                   value="@option.AnswerOptionId"
+                                   id="q@q.QuestionId-option@option.AnswerOptionId"
+                                   @(isChecked ? "checked" : "") />
                             <label class="form-check-label" for="q@q.QuestionId-option@option.AnswerOptionId">
                                 @option.Text
                             </label>
                         </div>
                     }
                 </div>
+
+                @if (unanswered.Contains(q.QuestionId))
+                {
+                    <span class="text-danger d-block mt-2">Please select an answer for this question.</span>
+                }
             </div>
         </div>
     }
-<<<<<<< HEAD
 
     <button type="submit" class="btn btn-success btn-lg">Submit Quiz</button>
     <a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-secondary btn-lg ms-2">Cancel</a>
-=======
- 
-    <button type="submit" class="btn btn-success">Submit</button>
-    <a asp-action="Index" asp-controller="TakeQuiz" class="btn btn-secondary">Cancel</a>
->>>>>>> fe67c3cffe2c003ce57ac7c15889406626e2c19a
 </form>
