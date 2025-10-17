@@ -1,0 +1,14 @@
+2025-10-17 11:46:58.943 +02:00 [INF] User profile is available. Using 'C:\Users\Aliza Mudassar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-17 11:46:59.050 +02:00 [INF] Now listening on: http://localhost:5185
+2025-10-17 11:46:59.055 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-17 11:46:59.056 +02:00 [INF] Hosting environment: Development
+2025-10-17 11:46:59.056 +02:00 [INF] Content root path: C:\Users\Aliza Mudassar\OneDrive - OsloMet\webapplikasjoner\ITPE3200FAM
+2025-10-17 11:47:01.414 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/ - null null
+2025-10-17 11:47:01.490 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.HomeController.Index (ITPE3200FAM)'
+2025-10-17 11:47:01.564 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ITPE3200FAM.Controllers.HomeController (ITPE3200FAM).
+2025-10-17 11:47:01.584 +02:00 [INF] Executing ViewResult, running view Index.
+2025-10-17 11:47:01.667 +02:00 [INF] Executed ViewResult - view Index executed in 86.3315ms.
+2025-10-17 11:47:01.671 +02:00 [INF] Executed action ITPE3200FAM.Controllers.HomeController.Index (ITPE3200FAM) in 106.0022ms
+2025-10-17 11:47:01.671 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.HomeController.Index (ITPE3200FAM)'
+2025-10-17 11:47:01.678 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/ - 200 null text/html; charset=utf-8 266.6565ms
+2025-10-17 11:47:25.963 +02:00 [INF] Application is shutting down...

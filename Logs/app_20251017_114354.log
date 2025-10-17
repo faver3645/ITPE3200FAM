@@ -123,3 +123,4 @@
 2025-10-17 11:44:45.850 +02:00 [INF] Executed action ITPE3200FAM.Controllers.TakeQuizController.Index (ITPE3200FAM) in 7.8252ms
 2025-10-17 11:44:45.850 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.TakeQuizController.Index (ITPE3200FAM)'
 2025-10-17 11:44:45.850 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/TakeQuiz - 200 null text/html; charset=utf-8 8.482ms
+2025-10-17 11:46:47.097 +02:00 [INF] Application is shutting down...
