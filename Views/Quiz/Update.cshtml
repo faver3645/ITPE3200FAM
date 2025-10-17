@@ -8,7 +8,7 @@
 <form asp-action="Update" method="post">
     @Html.AntiForgeryToken()
 
-    <!-- Valideringssummary -->
+    
     <div asp-validation-summary="All" class="text-danger mb-3"></div>
 
     <input type="hidden" asp-for="QuizId" />
@@ -37,7 +37,7 @@
                         <div class="form-check mb-1">
                             <input type="hidden" name="Questions[@i].AnswerOptions[@j].AnswerOptionId" value="@Model.Questions[i].AnswerOptions[j].AnswerOptionId" />
 
-                            <!-- Checkbox først, hidden etter -->
+                            
                             <input type="checkbox"
                                 name="Questions[@i].AnswerOptions[@j].IsCorrect"
                                 class="form-check-input"
@@ -72,7 +72,7 @@
 <script>
 let questionCount = @Model.Questions.Count;
 
-// Legg til nytt spørsmål
+// add new question
 document.getElementById("add-question").addEventListener("click", function() {
     let container = document.getElementById("questions-container");
     let questionHtml = `
@@ -98,7 +98,7 @@ document.getElementById("add-question").addEventListener("click", function() {
     questionCount++;
 });
 
-// Legg til flere svaralternativer
+
 document.addEventListener("click", function(e){
     if (e.target && e.target.classList.contains("add-answer")) {
         let questionIndex = e.target.getAttribute("data-question-index");
