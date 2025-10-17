@@ -115,3 +115,11 @@
 2025-10-17 11:44:42.873 +02:00 [INF] Executed action ITPE3200FAM.Controllers.TakeQuizController.Attempts (ITPE3200FAM) in 4.9903ms
 2025-10-17 11:44:42.873 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.TakeQuizController.Attempts (ITPE3200FAM)'
 2025-10-17 11:44:42.873 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/TakeQuiz/Attempts/43 - 200 null text/html; charset=utf-8 5.7458ms
+2025-10-17 11:44:45.842 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/TakeQuiz - null null
+2025-10-17 11:44:45.842 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.TakeQuizController.Index (ITPE3200FAM)'
+2025-10-17 11:44:45.842 +02:00 [INF] Route matched with {action = "Index", controller = "TakeQuiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ITPE3200FAM.Controllers.TakeQuizController (ITPE3200FAM).
+2025-10-17 11:44:45.849 +02:00 [INF] Executing ViewResult, running view Index.
+2025-10-17 11:44:45.850 +02:00 [INF] Executed ViewResult - view Index executed in 1.4925ms.
+2025-10-17 11:44:45.850 +02:00 [INF] Executed action ITPE3200FAM.Controllers.TakeQuizController.Index (ITPE3200FAM) in 7.8252ms
+2025-10-17 11:44:45.850 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.TakeQuizController.Index (ITPE3200FAM)'
+2025-10-17 11:44:45.850 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/TakeQuiz - 200 null text/html; charset=utf-8 8.482ms
