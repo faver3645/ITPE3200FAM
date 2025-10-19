@@ -10,5 +10,5 @@ public class Quiz
     [StringLength(100, MinimumLength = 2, ErrorMessage = "The Title must be between 2 and 100 characters.")]
     [Display(Name = "Quiz Title")]
     public string Title { get; set; } = string.Empty;
-    public virtual List<Question> Questions { get; set; } = new();
+    public List<Question> Questions { get; set; } = new();
 }

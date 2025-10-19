@@ -6,6 +6,6 @@ public class QuizResult
     public int QuizResultId { get; set; }
     public string UserName { get; set; } = string.Empty;
     public int QuizId { get; set; }
-    public virtual Quiz Quiz { get; set; } = default!;
+    public Quiz Quiz { get; set; } = default!;
     public int Score { get; set; }
 }
