@@ -1,1 +1,100 @@
+<<<<<<< HEAD
+{
+  "Version": 1,
+  "Hash": "riQV7erpT2ujAaD9MBRK5olAHOxYhV46hLPf534EgpQ=",
+  "Source": "ITPE3200FAM",
+  "BasePath": "_content/ITPE3200FAM",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ITPE3200FAM\\wwwroot",
+      "Source": "ITPE3200FAM",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\wwwroot\\",
+      "BasePath": "_content/ITPE3200FAM",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ITPE3200FAM.styles.css",
+      "SourceId": "ITPE3200FAM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/ITPE3200FAM",
+      "RelativePath": "ITPE3200FAM.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ITPE3200FAM.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ITPE3200FAM.bundle.scp.css",
+      "SourceId": "ITPE3200FAM",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/ITPE3200FAM",
+      "RelativePath": "ITPE3200FAM.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ITPE3200FAM.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\wwwroot\\js\\bootstrap.js",
+      "SourceId": "ITPE3200FAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\wwwroot\\",
+      "BasePath": "_content/ITPE3200FAM",
+      "RelativePath": "js/bootstrap.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.js"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\wwwroot\\js\\jquery.min.js",
+      "SourceId": "ITPE3200FAM",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\wwwroot\\",
+      "BasePath": "_content/ITPE3200FAM",
+      "RelativePath": "js/jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
+    }
+  ]
+}
+=======
 {"Version":1,"Hash":"KYNz214NWYHR2OlstGj5ACwn0lWT7RZiqNqwMdOLBr4=","Source":"ITPE3200FAM","BasePath":"_content/ITPE3200FAM","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[{"Name":"ITPE3200FAM\\wwwroot","Source":"ITPE3200FAM","ContentRoot":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\wwwroot\\","BasePath":"_content/ITPE3200FAM","Pattern":"**"}],"Assets":[{"Identity":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ITPE3200FAM.styles.css","SourceId":"ITPE3200FAM","SourceType":"Computed","ContentRoot":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\","BasePath":"_content/ITPE3200FAM","RelativePath":"ITPE3200FAM#[.{fingerprint}]?.styles.css","AssetKind":"All","AssetMode":"CurrentProject","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"ScopedCss","AssetTraitValue":"ApplicationBundle","Fingerprint":"615ukueukm","Integrity":"Bl9QDAmD2KS8qMpVcSTOkT1Qu3efl2iHVqNS1DVTqE4=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ITPE3200FAM.styles.css","FileLength":2315,"LastWriteTime":"2025-10-17T09:47:30+00:00"},{"Identity":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ITPE3200FAM.bundle.scp.css","SourceId":"ITPE3200FAM","SourceType":"Computed","ContentRoot":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\","BasePath":"_content/ITPE3200FAM","RelativePath":"ITPE3200FAM#[.{fingerprint}]!.bundle.scp.css","AssetKind":"All","AssetMode":"Reference","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"ScopedCss","AssetTraitValue":"ProjectBundle","Fingerprint":"615ukueukm","Integrity":"Bl9QDAmD2KS8qMpVcSTOkT1Qu3efl2iHVqNS1DVTqE4=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ITPE3200FAM.bundle.scp.css","FileLength":2315,"LastWriteTime":"2025-10-17T09:47:30+00:00"},{"Identity":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\wwwroot\\js\\bootstrap.js","SourceId":"ITPE3200FAM","SourceType":"Discovered","ContentRoot":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\wwwroot\\","BasePath":"_content/ITPE3200FAM","RelativePath":"js/bootstrap#[.{fingerprint}]?.js","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"5svw5dju7q","Integrity":"G26Fbopja83eRYjmOhBhztlu27RoEnslJDYpY01AIHk=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\js\\bootstrap.js","FileLength":145474,"LastWriteTime":"2025-10-10T10:19:58+00:00"},{"Identity":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\wwwroot\\js\\jquery.min.js","SourceId":"ITPE3200FAM","SourceType":"Discovered","ContentRoot":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\wwwroot\\","BasePath":"_content/ITPE3200FAM","RelativePath":"js/jquery.min#[.{fingerprint}]?.js","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"o1o13a6vjx","Integrity":"/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\js\\jquery.min.js","FileLength":87533,"LastWriteTime":"2025-10-10T10:19:58+00:00"}],"Endpoints":[{"Route":"ITPE3200FAM.615ukueukm.bundle.scp.css","AssetFile":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ITPE3200FAM.bundle.scp.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2315"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"Bl9QDAmD2KS8qMpVcSTOkT1Qu3efl2iHVqNS1DVTqE4=\""},{"Name":"Last-Modified","Value":"Fri, 17 Oct 2025 09:47:30 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"615ukueukm"},{"Name":"label","Value":"ITPE3200FAM.bundle.scp.css"},{"Name":"integrity","Value":"sha256-Bl9QDAmD2KS8qMpVcSTOkT1Qu3efl2iHVqNS1DVTqE4="}]},{"Route":"ITPE3200FAM.615ukueukm.styles.css","AssetFile":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ITPE3200FAM.styles.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2315"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"Bl9QDAmD2KS8qMpVcSTOkT1Qu3efl2iHVqNS1DVTqE4=\""},{"Name":"Last-Modified","Value":"Fri, 17 Oct 2025 09:47:30 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"615ukueukm"},{"Name":"label","Value":"ITPE3200FAM.styles.css"},{"Name":"integrity","Value":"sha256-Bl9QDAmD2KS8qMpVcSTOkT1Qu3efl2iHVqNS1DVTqE4="}]},{"Route":"ITPE3200FAM.bundle.scp.css","AssetFile":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ITPE3200FAM.bundle.scp.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2315"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"Bl9QDAmD2KS8qMpVcSTOkT1Qu3efl2iHVqNS1DVTqE4=\""},{"Name":"Last-Modified","Value":"Fri, 17 Oct 2025 09:47:30 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-Bl9QDAmD2KS8qMpVcSTOkT1Qu3efl2iHVqNS1DVTqE4="}]},{"Route":"ITPE3200FAM.styles.css","AssetFile":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ITPE3200FAM.styles.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2315"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"Bl9QDAmD2KS8qMpVcSTOkT1Qu3efl2iHVqNS1DVTqE4=\""},{"Name":"Last-Modified","Value":"Fri, 17 Oct 2025 09:47:30 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-Bl9QDAmD2KS8qMpVcSTOkT1Qu3efl2iHVqNS1DVTqE4="}]},{"Route":"js/bootstrap.5svw5dju7q.js","AssetFile":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\wwwroot\\js\\bootstrap.js","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"145474"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"G26Fbopja83eRYjmOhBhztlu27RoEnslJDYpY01AIHk=\""},{"Name":"Last-Modified","Value":"Fri, 10 Oct 2025 10:19:58 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"5svw5dju7q"},{"Name":"label","Value":"js/bootstrap.js"},{"Name":"integrity","Value":"sha256-G26Fbopja83eRYjmOhBhztlu27RoEnslJDYpY01AIHk="}]},{"Route":"js/bootstrap.js","AssetFile":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\wwwroot\\js\\bootstrap.js","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"145474"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"G26Fbopja83eRYjmOhBhztlu27RoEnslJDYpY01AIHk=\""},{"Name":"Last-Modified","Value":"Fri, 10 Oct 2025 10:19:58 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-G26Fbopja83eRYjmOhBhztlu27RoEnslJDYpY01AIHk="}]},{"Route":"js/jquery.min.js","AssetFile":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\wwwroot\\js\\jquery.min.js","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"87533"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=\""},{"Name":"Last-Modified","Value":"Fri, 10 Oct 2025 10:19:58 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="}]},{"Route":"js/jquery.min.o1o13a6vjx.js","AssetFile":"C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\wwwroot\\js\\jquery.min.js","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"87533"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=\""},{"Name":"Last-Modified","Value":"Fri, 10 Oct 2025 10:19:58 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"o1o13a6vjx"},{"Name":"label","Value":"js/jquery.min.js"},{"Name":"integrity","Value":"sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="}]}]}
+>>>>>>> b1eaef75d6596eed3e83b74a08f7ab1d87dfd0ae

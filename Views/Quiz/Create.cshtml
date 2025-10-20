@@ -33,10 +33,10 @@
                     @for (int j = 0; j < q.AnswerOptions.Count; j++)
                     {
                         <div class="form-check mb-1">
-                            <input type="checkbox" name="Questions[@i].AnswerOptions[@j].IsCorrect" value="true" class="form-check-input" />
+                            <input asp-for="Questions[@i].AnswerOptions[@j].IsCorrect" class="form-check-input" />
                             <input type="hidden" name="Questions[@i].AnswerOptions[@j].IsCorrect" value="false" />
-                            <input name="Questions[@i].AnswerOptions[@j].Text" class="form-control d-inline w-75" placeholder="Answer text" value="@q.AnswerOptions[j].Text" />
-                            <span asp-validation-for="Questions[i].AnswerOptions[j].Text" class="text-danger"></span>
+                            <input asp-for="Questions[@i].AnswerOptions[@j].Text" class="form-control d-inline w-75" placeholder="Answer text" />
+                            <span asp-validation-for="Questions[@i].AnswerOptions[@j].Text" class="text-danger"></span>
                         </div>
                     }
                 </div>

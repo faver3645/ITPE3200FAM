@@ -10,7 +10,7 @@ The app uses SQLite as the database and implements a Repository pattern for clea
 ## Tech Stack
 
 - **Backend:** .NET Core 8.0, MVC  
-- **Frontend:** Bootstrap 5, Razor Views  
+- **Frontend:** Bootstrap 5, Razor Views, JavaScript  
 - **Database:** SQLite  
 - **Other:** Entity Framework Core, Dependency Injection
 
@@ -18,5 +18,8 @@ The app uses SQLite as the database and implements a Repository pattern for clea
 
 start the application with dotnet run and access the web app at given link
 
-
+## Group members:
+- Fanny Versini - s385382
+- Muniira Abdirahman Mohumed - s85366
+- Aliza Mudassar - s383045
 
