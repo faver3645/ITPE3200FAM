@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\ITPE3200FAM.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\ITPE3200FAM.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\ITPE3200FAM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\ITPE3200FAM.csproj",
+        "projectName": "ITPE3200FAM",
+        "projectPath": "C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\ITPE3200FAM.csproj",
+        "packagesPath": "C:\\Users\\Aliza Mudassar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aliza Mudassar\\OneDrive - OsloMet\\webapplikasjoner\\ITPE3200FAM\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Aliza Mudassar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> b1eaef75d6596eed3e83b74a08f7ab1d87dfd0ae
         ],
         "originalTargetFrameworks": [
           "net8.0"

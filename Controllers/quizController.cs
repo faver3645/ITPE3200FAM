@@ -28,7 +28,7 @@ namespace ITPE3200FAM.Controllers
             return View(quizzes);
         }
 
-        // GET: /Quiz/Details/5
+        // GET: /Quiz/Details
         public async Task<IActionResult> Details(int id)
         {
             var quiz = await _repo.GetQuizById(id);
@@ -89,7 +89,7 @@ namespace ITPE3200FAM.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: /Quiz/Update/5
+        // GET: /Quiz/Update
         [HttpGet]
         public async Task<IActionResult> Update(int id)
         {
@@ -102,7 +102,7 @@ namespace ITPE3200FAM.Controllers
             return View(quiz);
         }
 
-        // POST: /Quiz/Update/5
+        // POST: /Quiz/Update
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(Quiz quiz)
@@ -129,7 +129,7 @@ namespace ITPE3200FAM.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: /Quiz/Delete/5
+        // GET: /Quiz/Delete
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
@@ -142,7 +142,7 @@ namespace ITPE3200FAM.Controllers
             return View(quiz);
         }
 
-        // POST: /Quiz/DeleteConfirmed/5
+        // POST: /Quiz/DeleteConfirmed
         [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

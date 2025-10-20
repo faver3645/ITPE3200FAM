@@ -51,7 +51,7 @@ namespace ITPE3200FAM.Controllers
                 return NotFound("Quiz not found");
             }
 
-            // SERVER-SIDE VALIDATION
+            // validation
             bool hasErrors = false;
 
             if (string.IsNullOrWhiteSpace(userName))
@@ -69,12 +69,12 @@ namespace ITPE3200FAM.Controllers
 
             if (unansweredQuestions.Any())
             {
-                // legg bare til én samlet feil på toppen
+               
                 ModelState.AddModelError("", "Please answer all questions before submitting.");
                 hasErrors = true;
             }
 
-            // SEND SVAR TILBAKE TIL VIEW
+            
             ViewData["UserName"] = userName;
             ViewData["Answers"] = answers;
             ViewData["Unanswered"] = unansweredQuestions;
@@ -82,7 +82,7 @@ namespace ITPE3200FAM.Controllers
             if (hasErrors)
                 return View("Take", quiz);
 
-            // BEREGN SCORE
+            // SCORE
             int score = 0;
             foreach (var question in quiz.Questions)
             {
@@ -141,7 +141,7 @@ namespace ITPE3200FAM.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: /TakeQuiz/Attempts/5
+        // GET: /TakeQuiz/Attempts
         [HttpGet]
         public async Task<IActionResult> Attempts(int id) // id = QuizId
         {

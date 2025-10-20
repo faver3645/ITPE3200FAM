@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ITPE3200FAM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f17993736e194993e00a075579ffad62e436521")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18262514ee87f2b17ef542b0db9dcc6d8f61b4d5")]
+>>>>>>> b1eaef75d6596eed3e83b74a08f7ab1d87dfd0ae
 [assembly: System.Reflection.AssemblyProductAttribute("ITPE3200FAM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ITPE3200FAM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
