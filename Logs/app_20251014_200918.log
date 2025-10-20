@@ -1,0 +1,173 @@
+2025-10-14 20:09:19.333 +02:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-14 20:09:19.703 +02:00 [INF] Now listening on: https://localhost:7064
+2025-10-14 20:09:19.708 +02:00 [INF] Now listening on: http://localhost:5185
+2025-10-14 20:09:19.718 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-14 20:09:19.725 +02:00 [INF] Hosting environment: Development
+2025-10-14 20:09:19.730 +02:00 [INF] Content root path: C:\Users\Admin\OneDrive - OsloMet\FAMExam\ITPE3200FAM
+2025-10-14 20:09:25.236 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/home/index - null null
+2025-10-14 20:09:25.428 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.HomeController.Index (ITPE3200FAM)'
+2025-10-14 20:09:25.580 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ITPE3200FAM.Controllers.HomeController (ITPE3200FAM).
+2025-10-14 20:09:25.627 +02:00 [INF] Executing ViewResult, running view Index.
+2025-10-14 20:09:25.863 +02:00 [INF] Executed ViewResult - view Index executed in 255.6364ms.
+2025-10-14 20:09:25.870 +02:00 [INF] Executed action ITPE3200FAM.Controllers.HomeController.Index (ITPE3200FAM) in 287.5017ms
+2025-10-14 20:09:25.871 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.HomeController.Index (ITPE3200FAM)'
+2025-10-14 20:09:25.878 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/home/index - 200 null text/html; charset=utf-8 653.4917ms
+2025-10-14 20:09:32.420 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/Quiz/Create - null null
+2025-10-14 20:09:32.422 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:09:32.428 +02:00 [INF] Route matched with {action = "Create", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:09:32.739 +02:00 [INF] Executing ViewResult, running view Create.
+2025-10-14 20:09:32.825 +02:00 [INF] Executed ViewResult - view Create executed in 87.0768ms.
+2025-10-14 20:09:32.825 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM) in 397.2432ms
+2025-10-14 20:09:32.825 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:09:32.828 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/Quiz/Create - 200 null text/html; charset=utf-8 408.2661ms
+2025-10-14 20:09:34.451 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5185/Quiz/Create - application/x-www-form-urlencoded 516
+2025-10-14 20:09:34.457 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:09:34.483 +02:00 [INF] Route matched with {action = "Create", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ITPE3200FAM.Models.Quiz) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:09:34.545 +02:00 [INF] Executing ViewResult, running view Create.
+2025-10-14 20:09:34.562 +02:00 [INF] Executed ViewResult - view Create executed in 16.8103ms.
+2025-10-14 20:09:34.562 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM) in 78.7497ms
+2025-10-14 20:09:34.562 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:09:34.563 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5185/Quiz/Create - 200 null text/html; charset=utf-8 112.1058ms
+2025-10-14 20:10:00.010 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5185/Quiz/Create - application/x-www-form-urlencoded 789
+2025-10-14 20:10:00.051 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:10:00.073 +02:00 [INF] Route matched with {action = "Create", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ITPE3200FAM.Models.Quiz) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:10:00.142 +02:00 [INF] Executing ViewResult, running view Create.
+2025-10-14 20:10:00.199 +02:00 [INF] Executed ViewResult - view Create executed in 59.188ms.
+2025-10-14 20:10:00.199 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM) in 124.555ms
+2025-10-14 20:10:00.200 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:10:00.200 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5185/Quiz/Create - 200 null text/html; charset=utf-8 194.8999ms
+2025-10-14 20:10:04.620 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5185/Quiz/Create - application/x-www-form-urlencoded 950
+2025-10-14 20:10:04.623 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:10:04.623 +02:00 [INF] Route matched with {action = "Create", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ITPE3200FAM.Models.Quiz) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:10:04.627 +02:00 [INF] Executing ViewResult, running view Create.
+2025-10-14 20:10:04.647 +02:00 [INF] Executed ViewResult - view Create executed in 20.418ms.
+2025-10-14 20:10:04.648 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM) in 24.1567ms
+2025-10-14 20:10:04.648 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:10:04.648 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5185/Quiz/Create - 200 null text/html; charset=utf-8 27.2158ms
+2025-10-14 20:10:13.367 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5185/Quiz/Create - application/x-www-form-urlencoded 1222
+2025-10-14 20:10:13.368 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:10:13.368 +02:00 [INF] Route matched with {action = "Create", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ITPE3200FAM.Models.Quiz) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:10:13.373 +02:00 [INF] Executing ViewResult, running view Create.
+2025-10-14 20:10:13.409 +02:00 [INF] Executed ViewResult - view Create executed in 36.6789ms.
+2025-10-14 20:10:13.410 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM) in 41.5227ms
+2025-10-14 20:10:13.410 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:10:13.410 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5185/Quiz/Create - 200 null text/html; charset=utf-8 43.1689ms
+2025-10-14 20:10:24.800 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5185/Quiz/Create - application/x-www-form-urlencoded 1460
+2025-10-14 20:10:24.805 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:10:24.805 +02:00 [INF] Route matched with {action = "Create", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ITPE3200FAM.Models.Quiz) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:10:24.812 +02:00 [INF] Executing ViewResult, running view Create.
+2025-10-14 20:10:24.850 +02:00 [INF] Executed ViewResult - view Create executed in 42.106ms.
+2025-10-14 20:10:24.850 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM) in 45.2266ms
+2025-10-14 20:10:24.851 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:10:24.851 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5185/Quiz/Create - 200 null text/html; charset=utf-8 56.6415ms
+2025-10-14 20:10:32.474 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5185/Quiz/Create - application/x-www-form-urlencoded 1567
+2025-10-14 20:10:32.474 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:10:32.474 +02:00 [INF] Route matched with {action = "Create", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ITPE3200FAM.Models.Quiz) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:10:36.791 +02:00 [INF] Executing RedirectResult, redirecting to /Quiz.
+2025-10-14 20:10:36.797 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM) in 4322.8873ms
+2025-10-14 20:10:36.798 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Create (ITPE3200FAM)'
+2025-10-14 20:10:36.809 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5185/Quiz/Create - 302 0 null 4335.123ms
+2025-10-14 20:10:36.822 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/Quiz - null null
+2025-10-14 20:10:36.823 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM)'
+2025-10-14 20:10:36.834 +02:00 [INF] Route matched with {action = "Index", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:10:37.394 +02:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-10-14 20:10:37.466 +02:00 [INF] Executing ViewResult, running view Index.
+2025-10-14 20:10:37.483 +02:00 [INF] Executed ViewResult - view Index executed in 20.9467ms.
+2025-10-14 20:10:37.483 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM) in 649.3029ms
+2025-10-14 20:10:37.484 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM)'
+2025-10-14 20:10:37.485 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/Quiz - 200 null text/html; charset=utf-8 662.7499ms
+2025-10-14 20:10:39.427 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/Quiz/Details/50 - null null
+2025-10-14 20:10:39.429 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Details (ITPE3200FAM)'
+2025-10-14 20:10:39.442 +02:00 [INF] Route matched with {action = "Details", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:10:39.510 +02:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-10-14 20:10:39.530 +02:00 [INF] Executing ViewResult, running view Details.
+2025-10-14 20:10:39.538 +02:00 [INF] Executed ViewResult - view Details executed in 8.9628ms.
+2025-10-14 20:10:39.538 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Details (ITPE3200FAM) in 96.0436ms
+2025-10-14 20:10:39.538 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Details (ITPE3200FAM)'
+2025-10-14 20:10:39.538 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/Quiz/Details/50 - 200 null text/html; charset=utf-8 110.8151ms
+2025-10-14 20:10:43.047 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/Quiz - null null
+2025-10-14 20:10:43.048 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM)'
+2025-10-14 20:10:43.048 +02:00 [INF] Route matched with {action = "Index", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:10:43.059 +02:00 [INF] Executing ViewResult, running view Index.
+2025-10-14 20:10:43.062 +02:00 [INF] Executed ViewResult - view Index executed in 2.2559ms.
+2025-10-14 20:10:43.062 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM) in 13.9148ms
+2025-10-14 20:10:43.062 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM)'
+2025-10-14 20:10:43.062 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/Quiz - 200 null text/html; charset=utf-8 16.2228ms
+2025-10-14 20:10:44.397 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/Quiz/Update/50 - null null
+2025-10-14 20:10:44.397 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Update (ITPE3200FAM)'
+2025-10-14 20:10:44.402 +02:00 [INF] Route matched with {action = "Update", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:10:44.416 +02:00 [INF] Executing ViewResult, running view Update.
+2025-10-14 20:10:44.470 +02:00 [INF] Executed ViewResult - view Update executed in 58.2472ms.
+2025-10-14 20:10:44.471 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Update (ITPE3200FAM) in 68.3086ms
+2025-10-14 20:10:44.471 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Update (ITPE3200FAM)'
+2025-10-14 20:10:44.471 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/Quiz/Update/50 - 200 null text/html; charset=utf-8 73.8646ms
+2025-10-14 20:10:49.400 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5185/Quiz/Update/50 - application/x-www-form-urlencoded 1913
+2025-10-14 20:10:49.400 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Update (ITPE3200FAM)'
+2025-10-14 20:10:49.407 +02:00 [INF] Route matched with {action = "Update", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(ITPE3200FAM.Models.Quiz) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:10:49.421 +02:00 [INF] Executing ViewResult, running view Update.
+2025-10-14 20:10:49.434 +02:00 [INF] Executed ViewResult - view Update executed in 12.9146ms.
+2025-10-14 20:10:49.434 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Update (ITPE3200FAM) in 26.866ms
+2025-10-14 20:10:49.434 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Update (ITPE3200FAM)'
+2025-10-14 20:10:49.434 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5185/Quiz/Update/50 - 200 null text/html; charset=utf-8 35.2448ms
+2025-10-14 20:11:13.736 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5185/Quiz/Update/50 - application/x-www-form-urlencoded 2324
+2025-10-14 20:11:13.742 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Update (ITPE3200FAM)'
+2025-10-14 20:11:13.746 +02:00 [INF] Route matched with {action = "Update", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(ITPE3200FAM.Models.Quiz) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:11:13.784 +02:00 [INF] Executing ViewResult, running view Update.
+2025-10-14 20:11:13.805 +02:00 [INF] Executed ViewResult - view Update executed in 21.9603ms.
+2025-10-14 20:11:13.806 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Update (ITPE3200FAM) in 60.0728ms
+2025-10-14 20:11:13.806 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Update (ITPE3200FAM)'
+2025-10-14 20:11:13.806 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5185/Quiz/Update/50 - 200 null text/html; charset=utf-8 72.8191ms
+2025-10-14 20:11:21.723 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5185/Quiz/Update/50 - application/x-www-form-urlencoded 2570
+2025-10-14 20:11:21.724 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Update (ITPE3200FAM)'
+2025-10-14 20:11:21.725 +02:00 [INF] Route matched with {action = "Update", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(ITPE3200FAM.Models.Quiz) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:11:21.943 +02:00 [INF] Executing RedirectResult, redirecting to /Quiz.
+2025-10-14 20:11:21.945 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Update (ITPE3200FAM) in 219.8244ms
+2025-10-14 20:11:21.945 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Update (ITPE3200FAM)'
+2025-10-14 20:11:21.945 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5185/Quiz/Update/50 - 302 0 null 222.7166ms
+2025-10-14 20:11:21.962 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/Quiz - null null
+2025-10-14 20:11:21.962 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM)'
+2025-10-14 20:11:21.963 +02:00 [INF] Route matched with {action = "Index", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:11:21.980 +02:00 [INF] Executing ViewResult, running view Index.
+2025-10-14 20:11:21.988 +02:00 [INF] Executed ViewResult - view Index executed in 7.756ms.
+2025-10-14 20:11:21.988 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM) in 25.4127ms
+2025-10-14 20:11:21.988 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM)'
+2025-10-14 20:11:21.988 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/Quiz - 200 null text/html; charset=utf-8 26.1256ms
+2025-10-14 20:11:23.681 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/Quiz/Details/50 - null null
+2025-10-14 20:11:23.681 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Details (ITPE3200FAM)'
+2025-10-14 20:11:23.681 +02:00 [INF] Route matched with {action = "Details", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:11:23.700 +02:00 [INF] Executing ViewResult, running view Details.
+2025-10-14 20:11:23.702 +02:00 [INF] Executed ViewResult - view Details executed in 1.6614ms.
+2025-10-14 20:11:23.702 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Details (ITPE3200FAM) in 20.4622ms
+2025-10-14 20:11:23.702 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Details (ITPE3200FAM)'
+2025-10-14 20:11:23.702 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/Quiz/Details/50 - 200 null text/html; charset=utf-8 21.7124ms
+2025-10-14 20:11:30.150 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/Quiz - null null
+2025-10-14 20:11:30.152 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM)'
+2025-10-14 20:11:30.152 +02:00 [INF] Route matched with {action = "Index", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:11:30.184 +02:00 [INF] Executing ViewResult, running view Index.
+2025-10-14 20:11:30.200 +02:00 [INF] Executed ViewResult - view Index executed in 18.0118ms.
+2025-10-14 20:11:30.200 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM) in 47.6246ms
+2025-10-14 20:11:30.200 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM)'
+2025-10-14 20:11:30.201 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/Quiz - 200 null text/html; charset=utf-8 50.9783ms
+2025-10-14 20:11:31.533 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/Quiz/Delete/50 - null null
+2025-10-14 20:11:31.537 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Delete (ITPE3200FAM)'
+2025-10-14 20:11:31.561 +02:00 [INF] Route matched with {action = "Delete", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:11:31.581 +02:00 [INF] Executing ViewResult, running view Delete.
+2025-10-14 20:11:31.601 +02:00 [INF] Executed ViewResult - view Delete executed in 26.7535ms.
+2025-10-14 20:11:31.601 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Delete (ITPE3200FAM) in 40.4407ms
+2025-10-14 20:11:31.601 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Delete (ITPE3200FAM)'
+2025-10-14 20:11:31.602 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/Quiz/Delete/50 - 200 null text/html; charset=utf-8 68.2696ms
+2025-10-14 20:11:33.023 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5185/Quiz/DeleteConfirmed/50 - application/x-www-form-urlencoded 182
+2025-10-14 20:11:33.023 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.DeleteConfirmed (ITPE3200FAM)'
+2025-10-14 20:11:33.030 +02:00 [INF] Route matched with {action = "DeleteConfirmed", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteConfirmed(Int32) on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:11:33.214 +02:00 [INF] Executing RedirectResult, redirecting to /Quiz.
+2025-10-14 20:11:33.214 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.DeleteConfirmed (ITPE3200FAM) in 184.0345ms
+2025-10-14 20:11:33.215 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.DeleteConfirmed (ITPE3200FAM)'
+2025-10-14 20:11:33.215 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5185/Quiz/DeleteConfirmed/50 - 302 0 null 192.014ms
+2025-10-14 20:11:33.221 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5185/Quiz - null null
+2025-10-14 20:11:33.221 +02:00 [INF] Executing endpoint 'ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM)'
+2025-10-14 20:11:33.222 +02:00 [INF] Route matched with {action = "Index", controller = "Quiz"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ITPE3200FAM.Controllers.QuizController (ITPE3200FAM).
+2025-10-14 20:11:33.234 +02:00 [INF] Executing ViewResult, running view Index.
+2025-10-14 20:11:33.235 +02:00 [INF] Executed ViewResult - view Index executed in 1.3741ms.
+2025-10-14 20:11:33.236 +02:00 [INF] Executed action ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM) in 14.0429ms
+2025-10-14 20:11:33.236 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.QuizController.Index (ITPE3200FAM)'
+2025-10-14 20:11:33.236 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/Quiz - 200 null text/html; charset=utf-8 14.6469ms
