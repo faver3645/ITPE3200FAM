@@ -19,7 +19,7 @@ The app uses SQLite as the database and implements a Repository pattern for clea
 start the application with dotnet run and access the web app at given link
 
 ## Group members:
-Fanny Versini - s385382
-Muniira Abdirahman Mohumed - s85366
-Aliza Mudassar - s383045
+-Fanny Versini - s385382
+-Muniira Abdirahman Mohumed - s85366
+-Aliza Mudassar - s383045
 
