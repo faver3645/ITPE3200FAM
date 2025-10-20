@@ -147,3 +147,4 @@
 2025-10-19 20:10:44.049 +02:00 [INF] Executed action ITPE3200FAM.Controllers.HomeController.Index (ITPE3200FAM) in 1.1261ms
 2025-10-19 20:10:44.049 +02:00 [INF] Executed endpoint 'ITPE3200FAM.Controllers.HomeController.Index (ITPE3200FAM)'
 2025-10-19 20:10:44.049 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5185/ - 200 null text/html; charset=utf-8 1.6446ms
+2025-10-20 10:00:29.343 +02:00 [INF] Application is shutting down...
