@@ -2829,19 +2829,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Muniira\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\ITPE3200FAM.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\ITPE3200FAM.csproj",
       "projectName": "ITPE3200FAM",
-      "projectPath": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\ITPE3200FAM.csproj",
-      "packagesPath": "C:\\Users\\Muniira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Muniira\\OneDrive - OsloMet\\Skrivebord\\FAMexam\\ITPE3200FAM\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\ITPE3200FAM.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\OneDrive - OsloMet\\FAMExam\\ITPE3200FAM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Muniira\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2864,8 +2864,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -2913,7 +2912,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
