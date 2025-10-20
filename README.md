@@ -12,7 +12,6 @@ The app uses SQLite as the database and implements a Repository pattern for clea
 - **Backend:** .NET Core 8.0, MVC  
 - **Frontend:** Bootstrap 5, Razor Views, JavaScript  
 - **Database:** SQLite  
-- **Other:** Entity Framework Core, Dependency Injection
 
 ## How to run:
 
