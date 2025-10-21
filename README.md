@@ -22,3 +22,7 @@ start the application with dotnet run and access the web app at given link
 - Muniira Abdirahman Mohumed - s85366
 - Aliza Mudassar - s383045
 
+## References
+- Canvas demo materials (course resources).
+- ChatGPT (OpenAI, 2025). Used for guidance in problem-solving, especially for implementing multiple question and answer options in Views/Quiz/Create.cshtml.
+
