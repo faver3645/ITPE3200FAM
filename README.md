@@ -9,7 +9,7 @@ The app uses SQLite as the database and implements a Repository pattern for clea
 
 ## Tech Stack
 
-- **Backend:** .NET Core 8.0, node.js version 22. 
+- **Backend:** .NET Core 8.0, node.js version: v22.18.0 & v22.14.0 
 - **Frontend:** Bootstrap 5, Razor Views, JavaScript  
 - **Database:** SQLite  
 
